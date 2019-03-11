@@ -9,8 +9,8 @@ env:
 before_install:
 - "./scripts/deps.sh"
 script:
-- "./scripts/template.py urls.yml.j2 urls.yml"
-- "./scripts/upload.sh urls.yml"
+- "./scripts/template.py config.yaml.j2 config.yaml"
+- "./scripts/upload.sh config.yaml"
 notifications:
   email: false
   slack:
